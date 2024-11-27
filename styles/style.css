@@ -395,6 +395,16 @@ Testimonial CSS
     right: 0px;
 }
 
+.testimonialSec {
+    position: relative;
+}
+
+.decorFav {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
 /* ============================
 Break-down CSS
 ============================ */
