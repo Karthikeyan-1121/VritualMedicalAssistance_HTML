@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>VMA - Home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- Google font : Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Animate on scroll -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Style links -->
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/graph.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="head-top w-100 p-2 text-center">
+            <p class="m-0">Virtual medical assistant a healthcare group of organization which strictly follows HIPAA act
+            </p>
+        </div>
+
+        <nav class="navbar navbar-expand-lg py-3" id="main-navigation">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="logo-VMA">
+                </a>
+
+                <div class="collapse navbar-collapse justify-content-lg-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-none mb-2 mb-lg-0 justify-content-lg-evenly align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link ps-0 active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-0" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="actionBtns d-flex">
+                    <div class="me-3">
+                        <a href="#">
+                            <button class="call-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                                    fill="none">
+                                    <path
+                                        d="M17.2489 8.24952C17.0497 8.24952 16.8587 8.17052 16.7178 8.0299C16.577 7.88928 16.4978 7.69855 16.4978 7.49968C16.4962 5.90922 15.8627 4.38435 14.7361 3.25972C13.6096 2.13509 12.0822 1.50258 10.4891 1.50099C10.2899 1.50099 10.0988 1.42199 9.95799 1.28137C9.81713 1.14075 9.738 0.950025 9.738 0.751156C9.738 0.552287 9.81713 0.361563 9.95799 0.220942C10.0988 0.0803199 10.2899 0.00131946 10.4891 0.00131946C12.4804 0.00350268 14.3896 0.794208 15.7977 2.19995C17.2058 3.60569 17.9978 5.51166 18 7.49968C18 7.69855 17.9209 7.88928 17.78 8.0299C17.6392 8.17052 17.4481 8.24952 17.2489 8.24952ZM14.9956 7.49968C14.9956 6.30647 14.5208 5.16213 13.6757 4.3184C12.8306 3.47467 11.6843 3.00067 10.4891 3.00067C10.2899 3.00067 10.0988 3.07967 9.95799 3.22029C9.81713 3.36091 9.738 3.55163 9.738 3.7505C9.738 3.94937 9.81713 4.14009 9.95799 4.28072C10.0988 4.42134 10.2899 4.50034 10.4891 4.50034C11.2859 4.50034 12.0501 4.81634 12.6135 5.37883C13.1769 5.94131 13.4935 6.70421 13.4935 7.49968C13.4935 7.69855 13.5726 7.88928 13.7134 8.0299C13.8543 8.17052 14.0453 8.24952 14.2445 8.24952C14.4437 8.24952 14.6348 8.17052 14.7756 8.0299C14.9165 7.88928 14.9956 7.69855 14.9956 7.49968ZM16.6353 16.6207L17.3188 15.8341C17.7538 15.3984 17.9981 14.8083 17.9981 14.1931C17.9981 13.5779 17.7538 12.9878 17.3188 12.5521C17.2955 12.5288 15.4884 11.1409 15.4884 11.1409C15.0546 10.7287 14.4785 10.4992 13.8797 10.5001C13.2809 10.5009 12.7055 10.732 12.2729 11.1454L10.8414 12.3496C9.67279 11.8668 8.61128 11.1583 7.71778 10.2647C6.82428 9.37117 6.1164 8.31021 5.63479 7.14276L6.83653 5.71807C7.25092 5.2863 7.4827 4.7117 7.48368 4.11373C7.48465 3.51575 7.25476 2.9404 6.84179 2.50727C6.84179 2.50727 5.45002 0.705416 5.42674 0.682171C4.9982 0.251576 4.41718 0.00658483 3.80921 0.000130808C3.20123 -0.00632321 2.61513 0.226278 2.17752 0.647679L1.31376 1.39752C-3.78915 7.30773 7.19931 18.1931 13.3147 17.9974C13.9322 18.001 14.5442 17.881 15.1145 17.6445C15.6849 17.4081 16.2019 17.06 16.6353 16.6207Z"
+                                        fill="#808080" />
+                                </svg>
+                                95241 - 204XX
+                            </button>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#">
+                            <button class="freeDemo-btn">
+                                Get free demo
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Hero section start -->
+        <section class="heroSec">
+            <div class="container-fluid px-0">
+                <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
+                    <!--data-bs-ride="true" -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/hero-banner/hero-banner-01.png" class="d-block w-100"
+                                alt="VMA Banner 01">
+                            <div class="carosel-content">
+                                <p>Hello Everyone</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/hero-banner/hero-banner-01.png" class="d-block w-100"
+                                alt="VMA Banner 01">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/hero-banner/hero-banner-01.png" class="d-block w-100"
+                                alt="VMA Banner 01">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Hero section ends -->
+
+        <!-- Video Showreel starts -->
+
+        <section class="showreelSec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="video-container-wrapper">
+                            <div class="video-container">
+                                <div class="video-thumb">
+                                    <img src="assets/images/hero-banner/hero-banner-01.png" class="w-100"
+                                        alt="Video Thumb">
+                                </div>
+                                <div class="video-text-content text-center w-50 w-lg-100">
+                                    <h2>Schedule a Free Demo</h2>
+                                    <p>Our experienced virtual medical assistants help you manage administrative tasks,
+                                        patient scheduling, medical billing, and more.</p>
+                                </div>
+                            </div>
+                            <div class="video-decor-LT">
+                                <img src="assets/svg/video-showreel-decor-LT.svg" alt="video-showreel-decor-LT">
+                            </div>
+                            <div class="video-decor-RB">
+                                <img src="assets/svg/video-showreel-decor-RB.svg" alt="video-showreel-decor-RB">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Showreel ends -->
+
+
+
+
+        <!-- Statics starts -->
+
+        <section class="staticsSec">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Why Choose Virtual Medical Assistants</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="static-wraper">
+
+                            <div class="statics-card statics-card-one">
+                                <div class="statics-graph">
+                                    <div class="donut-chart-block block">
+                                        <div class="donut-chart">
+                                            <div id="part" class="portion-block">
+                                                <div class="circle"></div>
+                                            </div>
+                                            <p class="center"></p>
+                                            <p class="value">15-13%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statics-info">
+                                    <p>Revenue lost due to billing errors on practices</p>
+                                </div>
+                            </div>
+
+                            <div class="statics-card statics-card-two">
+                                <div class="statics-graph">
+                                    <div class="donut-chart-block block">
+                                        <div class="donut-chart">
+                                            <div id="part" class="portion-block">
+                                                <div class="circle"></div>
+                                            </div>
+                                            <p class="center"></p>
+                                            <p class="value">30%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statics-info">
+                                    <p>Better work-life balance by delegating</p>
+                                </div>
+                            </div>
+
+                            <div class="statics-card statics-card-three">
+                                <div class="statics-graph">
+                                    <div class="donut-chart-block block">
+                                        <div class="donut-chart">
+                                            <div id="part" class="portion-block">
+                                                <div class="circle"></div>
+                                            </div>
+                                            <p class="center"></p>
+                                            <p class="value">40%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statics-info">
+                                    <p>Increase in patient satisfaction with VMAs</p>
+                                </div>
+                            </div>
+
+                            <div class="statics-card statics-card-four">
+                                <div class="statics-graph">
+                                    <div class="donut-chart-block block">
+                                        <div class="donut-chart">
+                                            <div id="part" class="portion-block">
+                                                <div class="circle"></div>
+                                            </div>
+                                            <p class="center"></p>
+                                            <p class="value">50%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statics-info">
+                                    <p>Operational cost savings using VMAs in clinics</p>
+                                </div>
+                            </div>
+
+                            <div class="statics-card statics-card-five">
+                                <div class="statics-graph">
+                                    <div class="donut-chart-block block">
+                                        <div class="donut-chart">
+                                            <div id="part" class="portion-block">
+                                                <div class="circle"></div>
+                                            </div>
+                                            <p class="center"></p>
+                                            <p class="value">70%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statics-info">
+                                    <p>Doctor time spent on administrative tasks</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statics ends -->
+
+
+        <!-- Key benefits starts -->
+
+        <section class="keyBenefitsSec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="headingTwo-n-span">
+                            <span>Key benefits </span>
+                            <h2>Transform Your Practice</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution of letters.</p>
+                    </div>
+                </div>
+                <div class="row benifitsCards">
+                    <div class="col-lg-3">
+                        <div class="benifits-card-wrapper benifits-card-one">
+                            <img src="assets/svg/Benefits-icon-01.svg" alt="Benefits-icon-01">
+                            <h3>Improve Efficiency</h3>
+                            <p>Reduce administrative burden and focus more on patient care.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="benifits-card-wrapper benifits-card-two">
+                            <img src="assets/svg/Benefits-icon-02.svg" alt="Benefits-icon-02">
+                            <h3>Improve Efficiency</h3>
+                            <p>Reduce administrative burden and focus more on patient care.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="benifits-card-wrapper benifits-card-three">
+                            <img src="assets/svg/Benefits-icon-03.svg" alt="Benefits-icon-03">
+                            <h3>Improve Efficiency</h3>
+                            <p>Reduce administrative burden and focus more on patient care.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="benifits-card-wrapper benifits-card-four">
+                            <img src="assets/svg/Benefits-icon-04.svg" alt="Benefits-icon-04">
+                            <h3>Improve Efficiency</h3>
+                            <p>Reduce administrative burden and focus more on patient care.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key benefits ends -->
+
+
+        <!-- Calculator starts -->
+
+        <section class="calcSec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="headingTwo-n-span">
+                            <span>Instantly See the Benefits</span>
+                            <h2>Virtual Medical Assistant Calculator</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Calculator ends -->
+
+
+        <!-- Testimonial starts -->
+
+        <section class="testimonialSec">
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <div class="headingTwo-n-span">
+                            <span>Instantly See the Benefits</span>
+                            <h2>Virtual Medical Assistant Calculator</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="testimoniCard-wrapper">
+                            <div class="testimoni-Img d-flex justify-content-center">
+                                <img src="assets/images/testimonial/testimoni-01.png" alt="testimoni-01">
+                            </div>
+                            <div class="testimoni-Content-wrappper">
+                                <div class="testimoni-Content">
+                                    <h3>Dr. Jane Doe</h3>
+                                    <p>Our practice has become more efficient, and patients are happier with quicker
+                                        response times. The virtual assistant has been a game-changer!</p>
+                                </div>
+                                <div class="testimoni-ratings">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="191" height="26" viewBox="0 0 191 26"
+                                        fill="none">
+                                        <path
+                                            d="M12.2392 2.34164C12.4786 1.60459 13.5214 1.60459 13.7608 2.34164L15.7391 8.42999C15.8462 8.75961 16.1533 8.98278 16.4999 8.98278H22.9016C23.6766 8.98278 23.9988 9.97447 23.3718 10.43L18.1928 14.1928C17.9124 14.3965 17.795 14.7576 17.9021 15.0872L19.8804 21.1756C20.1198 21.9126 19.2763 22.5255 18.6493 22.07L13.4702 18.3072C13.1898 18.1035 12.8102 18.1035 12.5298 18.3072L7.35071 22.07C6.72374 22.5255 5.88016 21.9126 6.11964 21.1756L8.09786 15.0872C8.20496 14.7576 8.08764 14.3965 7.80725 14.1928L2.62819 10.43C2.00121 9.97447 2.32343 8.98278 3.09841 8.98278H9.50008C9.84666 8.98278 10.1538 8.75961 10.2609 8.42999L12.2392 2.34164Z"
+                                            fill="#E09400" />
+                                        <path
+                                            d="M53.2392 2.34164C53.4786 1.60459 54.5214 1.60459 54.7608 2.34164L56.7391 8.42999C56.8462 8.75961 57.1533 8.98278 57.4999 8.98278H63.9016C64.6766 8.98278 64.9988 9.97447 64.3718 10.43L59.1928 14.1928C58.9124 14.3965 58.795 14.7576 58.9021 15.0872L60.8804 21.1756C61.1198 21.9126 60.2763 22.5255 59.6493 22.07L54.4702 18.3072C54.1898 18.1035 53.8102 18.1035 53.5298 18.3072L48.3507 22.07C47.7237 22.5255 46.8802 21.9126 47.1196 21.1756L49.0979 15.0872C49.205 14.7576 49.0876 14.3965 48.8072 14.1928L43.6282 10.43C43.0012 9.97447 43.3234 8.98278 44.0984 8.98278H50.5001C50.8467 8.98278 51.1538 8.75961 51.2609 8.42999L53.2392 2.34164Z"
+                                            fill="#E09400" />
+                                        <path
+                                            d="M94.742 2.24652C94.9868 1.52087 96.0132 1.52087 96.258 2.24652L98.3473 8.43855C98.4571 8.76379 98.7621 8.98278 99.1053 8.98278H105.8C106.583 8.98278 106.9 9.98983 106.259 10.4383L100.895 14.1909C100.604 14.3945 100.482 14.7657 100.596 15.1022L102.657 21.2101C102.904 21.9419 102.073 22.5641 101.44 22.1214L95.9586 18.2864C95.6832 18.0937 95.3168 18.0937 95.0414 18.2864L89.56 22.1214C88.9272 22.5641 88.0964 21.9419 88.3433 21.2101L90.4043 15.1022C90.5178 14.7657 90.3959 14.3945 90.1049 14.1909L84.7411 10.4383C84.1001 9.98983 84.4174 8.98278 85.1997 8.98278H91.8947C92.2379 8.98278 92.543 8.76379 92.6527 8.43855L94.742 2.24652Z"
+                                            fill="#E09400" />
+                                        <path
+                                            d="M136.239 2.34164C136.479 1.60459 137.521 1.60459 137.761 2.34164L139.739 8.42999C139.846 8.75961 140.153 8.98278 140.5 8.98278H146.902C147.677 8.98278 147.999 9.97447 147.372 10.43L142.193 14.1928C141.912 14.3965 141.795 14.7576 141.902 15.0872L143.88 21.1756C144.12 21.9126 143.276 22.5255 142.649 22.07L137.47 18.3072C137.19 18.1035 136.81 18.1035 136.53 18.3072L131.351 22.07C130.724 22.5255 129.88 21.9126 130.12 21.1756L132.098 15.0872C132.205 14.7576 132.088 14.3965 131.807 14.1928L126.628 10.43C126.001 9.97447 126.323 8.98278 127.098 8.98278H133.5C133.847 8.98278 134.154 8.75961 134.261 8.42999L136.239 2.34164Z"
+                                            fill="#E09400" />
+                                        <path
+                                            d="M177.239 2.34164C177.479 1.60459 178.521 1.60459 178.761 2.34164L180.739 8.42999C180.846 8.75961 181.153 8.98278 181.5 8.98278H187.902C188.677 8.98278 188.999 9.97447 188.372 10.43L183.193 14.1928C182.912 14.3965 182.795 14.7576 182.902 15.0872L184.88 21.1756C185.12 21.9126 184.276 22.5255 183.649 22.07L178.47 18.3072C178.19 18.1035 177.81 18.1035 177.53 18.3072L172.351 22.07C171.724 22.5255 170.88 21.9126 171.12 21.1756L173.098 15.0872C173.205 14.7576 173.088 14.3965 172.807 14.1928L167.628 10.43C167.001 9.97447 167.323 8.98278 168.098 8.98278H174.5C174.847 8.98278 175.154 8.75961 175.261 8.42999L177.239 2.34164Z"
+                                            fill="#E09400" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="quotationDecor">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="59" height="42" viewBox="0 0 59 42"
+                                    fill="none">
+                                    <path opacity="0.2"
+                                        d="M4.09542e-07 37.3154C2.25068 36.6692 4.28701 35.6462 6.10899 34.2462C7.93097 32.8462 9.48501 31.2308 10.7711 29.4C12.0572 27.6769 13.0218 25.7923 13.6648 23.7462C14.3079 21.7 14.5222 19.7077 14.3079 17.7692L4.98365 17.7692C4.12625 16.5846 3.42961 15.2385 2.89373 13.7308C2.35785 12.2231 2.08992 10.8769 2.08992 9.6923C2.08992 7.86153 2.35785 6.08461 2.89373 4.36153C3.42961 2.74614 4.12625 1.2923 4.98365 -4.72226e-06L22.9891 -3.14817e-06C24.7039 3.98461 25.6685 7.80769 25.8828 11.4692C25.8828 17.6077 24.7575 22.7231 22.5068 26.8154C20.149 31.0154 17.3088 34.3538 13.9864 36.8308C10.5568 39.4154 6.85921 41.1385 2.89373 42L4.09542e-07 37.3154ZM33.1172 37.3154C35.3678 36.6692 37.4042 35.6462 39.2262 34.2462C41.0481 32.8462 42.6022 31.2308 43.8883 29.4C45.1744 27.6769 46.139 25.7923 46.782 23.7462C47.4251 21.7 47.6394 19.7077 47.4251 17.7692L38.1008 17.7692C37.2434 16.5846 36.5468 15.2385 36.0109 13.7308C35.475 12.2231 35.2071 10.8769 35.2071 9.6923C35.2071 7.86153 35.475 6.08461 36.0109 4.36154C36.5468 2.74615 37.2434 1.2923 38.1008 -1.82706e-06L56.1063 -2.52978e-07C57.8211 3.98462 58.7857 7.80769 59 11.4692C59 17.6077 57.8747 22.7231 55.624 26.8154C53.2661 31.0154 50.426 34.3538 47.1035 36.8308C43.6739 39.4154 39.9764 41.1385 36.0109 42L33.1172 37.3154Z"
+                                        fill="#722E92" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="testimoniCard-wrapper">
+                            <div class="testimoni-Img d-flex justify-content-center">
+                                <img src="assets/images/testimonial/testimoni-02.png" alt="testimoni-02">
+                            </div>
+                            <div class="testimoni-Content-wrappper">
+                                <div class="testimoni-Content">
+                                    <h3>Dr. Jane Doe</h3>
+                                    <p>Our practice has become more efficient, and patients are happier with quicker
+                                        response times. The virtual assistant has been a game-changer!</p>
+                                </div>
+                                <div class="testimoni-ratings">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="191" height="26" viewBox="0 0 191 26"
+                                        fill="none">
+                                        <path
+                                            d="M12.2392 2.34164C12.4786 1.60459 13.5214 1.60459 13.7608 2.34164L15.7391 8.42999C15.8462 8.75961 16.1533 8.98278 16.4999 8.98278H22.9016C23.6766 8.98278 23.9988 9.97447 23.3718 10.43L18.1928 14.1928C17.9124 14.3965 17.795 14.7576 17.9021 15.0872L19.8804 21.1756C20.1198 21.9126 19.2763 22.5255 18.6493 22.07L13.4702 18.3072C13.1898 18.1035 12.8102 18.1035 12.5298 18.3072L7.35071 22.07C6.72374 22.5255 5.88016 21.9126 6.11964 21.1756L8.09786 15.0872C8.20496 14.7576 8.08764 14.3965 7.80725 14.1928L2.62819 10.43C2.00121 9.97447 2.32343 8.98278 3.09841 8.98278H9.50008C9.84666 8.98278 10.1538 8.75961 10.2609 8.42999L12.2392 2.34164Z"
+                                            fill="#E09400" />
+                                        <path
+                                            d="M53.2392 2.34164C53.4786 1.60459 54.5214 1.60459 54.7608 2.34164L56.7391 8.42999C56.8462 8.75961 57.1533 8.98278 57.4999 8.98278H63.9016C64.6766 8.98278 64.9988 9.97447 64.3718 10.43L59.1928 14.1928C58.9124 14.3965 58.795 14.7576 58.9021 15.0872L60.8804 21.1756C61.1198 21.9126 60.2763 22.5255 59.6493 22.07L54.4702 18.3072C54.1898 18.1035 53.8102 18.1035 53.5298 18.3072L48.3507 22.07C47.7237 22.5255 46.8802 21.9126 47.1196 21.1756L49.0979 15.0872C49.205 14.7576 49.0876 14.3965 48.8072 14.1928L43.6282 10.43C43.0012 9.97447 43.3234 8.98278 44.0984 8.98278H50.5001C50.8467 8.98278 51.1538 8.75961 51.2609 8.42999L53.2392 2.34164Z"
+                                            fill="#E09400" />
+                                        <path
+                                            d="M94.742 2.24652C94.9868 1.52087 96.0132 1.52087 96.258 2.24652L98.3473 8.43855C98.4571 8.76379 98.7621 8.98278 99.1053 8.98278H105.8C106.583 8.98278 106.9 9.98983 106.259 10.4383L100.895 14.1909C100.604 14.3945 100.482 14.7657 100.596 15.1022L102.657 21.2101C102.904 21.9419 102.073 22.5641 101.44 22.1214L95.9586 18.2864C95.6832 18.0937 95.3168 18.0937 95.0414 18.2864L89.56 22.1214C88.9272 22.5641 88.0964 21.9419 88.3433 21.2101L90.4043 15.1022C90.5178 14.7657 90.3959 14.3945 90.1049 14.1909L84.7411 10.4383C84.1001 9.98983 84.4174 8.98278 85.1997 8.98278H91.8947C92.2379 8.98278 92.543 8.76379 92.6527 8.43855L94.742 2.24652Z"
+                                            fill="#E09400" />
+                                        <path
+                                            d="M136.239 2.34164C136.479 1.60459 137.521 1.60459 137.761 2.34164L139.739 8.42999C139.846 8.75961 140.153 8.98278 140.5 8.98278H146.902C147.677 8.98278 147.999 9.97447 147.372 10.43L142.193 14.1928C141.912 14.3965 141.795 14.7576 141.902 15.0872L143.88 21.1756C144.12 21.9126 143.276 22.5255 142.649 22.07L137.47 18.3072C137.19 18.1035 136.81 18.1035 136.53 18.3072L131.351 22.07C130.724 22.5255 129.88 21.9126 130.12 21.1756L132.098 15.0872C132.205 14.7576 132.088 14.3965 131.807 14.1928L126.628 10.43C126.001 9.97447 126.323 8.98278 127.098 8.98278H133.5C133.847 8.98278 134.154 8.75961 134.261 8.42999L136.239 2.34164Z"
+                                            fill="#E09400" />
+                                        <path
+                                            d="M177.239 2.34164C177.479 1.60459 178.521 1.60459 178.761 2.34164L180.739 8.42999C180.846 8.75961 181.153 8.98278 181.5 8.98278H187.902C188.677 8.98278 188.999 9.97447 188.372 10.43L183.193 14.1928C182.912 14.3965 182.795 14.7576 182.902 15.0872L184.88 21.1756C185.12 21.9126 184.276 22.5255 183.649 22.07L178.47 18.3072C178.19 18.1035 177.81 18.1035 177.53 18.3072L172.351 22.07C171.724 22.5255 170.88 21.9126 171.12 21.1756L173.098 15.0872C173.205 14.7576 173.088 14.3965 172.807 14.1928L167.628 10.43C167.001 9.97447 167.323 8.98278 168.098 8.98278H174.5C174.847 8.98278 175.154 8.75961 175.261 8.42999L177.239 2.34164Z"
+                                            fill="#E09400" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="quotationDecor">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="59" height="42" viewBox="0 0 59 42"
+                                    fill="none">
+                                    <path opacity="0.2"
+                                        d="M4.09542e-07 37.3154C2.25068 36.6692 4.28701 35.6462 6.10899 34.2462C7.93097 32.8462 9.48501 31.2308 10.7711 29.4C12.0572 27.6769 13.0218 25.7923 13.6648 23.7462C14.3079 21.7 14.5222 19.7077 14.3079 17.7692L4.98365 17.7692C4.12625 16.5846 3.42961 15.2385 2.89373 13.7308C2.35785 12.2231 2.08992 10.8769 2.08992 9.6923C2.08992 7.86153 2.35785 6.08461 2.89373 4.36153C3.42961 2.74614 4.12625 1.2923 4.98365 -4.72226e-06L22.9891 -3.14817e-06C24.7039 3.98461 25.6685 7.80769 25.8828 11.4692C25.8828 17.6077 24.7575 22.7231 22.5068 26.8154C20.149 31.0154 17.3088 34.3538 13.9864 36.8308C10.5568 39.4154 6.85921 41.1385 2.89373 42L4.09542e-07 37.3154ZM33.1172 37.3154C35.3678 36.6692 37.4042 35.6462 39.2262 34.2462C41.0481 32.8462 42.6022 31.2308 43.8883 29.4C45.1744 27.6769 46.139 25.7923 46.782 23.7462C47.4251 21.7 47.6394 19.7077 47.4251 17.7692L38.1008 17.7692C37.2434 16.5846 36.5468 15.2385 36.0109 13.7308C35.475 12.2231 35.2071 10.8769 35.2071 9.6923C35.2071 7.86153 35.475 6.08461 36.0109 4.36154C36.5468 2.74615 37.2434 1.2923 38.1008 -1.82706e-06L56.1063 -2.52978e-07C57.8211 3.98462 58.7857 7.80769 59 11.4692C59 17.6077 57.8747 22.7231 55.624 26.8154C53.2661 31.0154 50.426 34.3538 47.1035 36.8308C43.6739 39.4154 39.9764 41.1385 36.0109 42L33.1172 37.3154Z"
+                                        fill="#722E92" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial ends -->
+
+
+        <!-- Break-down starts -->
+        <section class="breakdownSec">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-lg-5">
+                        <div class="headingTwo-n-span">
+                            <span>Features </span>
+                            <h2>Breakdown of VMA</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution of letters.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Break-down ends -->
+
+
+        <!-- Packages starts -->
+
+        <section class="packagesSec text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="headingTwo-n-span">
+                            <span>Packages </span>
+                            <h2>Pricing And Plans</h2>
+                            <p class="mt-3 mb-0">It is a long established fact that a reader will be distracted by the
+                                readable content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                that it has a more-or-less normal distribution of letters.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages ends -->
+
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <div class="brandInfo">
+                            <img src="assets/images/logo-whte.png" alt="Logo-White" class="mb-3">
+                            <p class="text-white mb-0">Hire a Dedicated Virtual Medical Assistant</p>
+                        </div>
+                        <div class="socialConnect">
+                            <p class="text-white">Follow us on</p>
+                            <div class="socialIcons d-flex gap-2">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="22" viewBox="0 0 10 22"
+                                        fill="none">
+                                        <path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2.18029 11.1849V21.4833C2.18029 21.6224 2.29626 21.7616 2.45862 21.7616H6.28572C6.42489 21.7616 6.56406 21.6456 6.56406 21.4833V10.9993H9.32421C9.46338 10.9993 9.57935 10.8833 9.60254 10.7442L9.83449 7.61292C9.85768 7.45055 9.71852 7.31139 9.55615 7.31139H6.54086V5.08471C6.54086 4.55124 6.95836 4.13373 7.49184 4.13373H9.62574C9.7649 4.13373 9.90407 4.01776 9.90407 3.8554V0.724135C9.90407 0.584968 9.7881 0.445801 9.62574 0.445801H6.00739C3.89668 0.445801 2.18029 2.1622 2.18029 4.2729V7.31139H0.278335C0.139167 7.31139 0 7.42736 0 7.58972V10.7442C0 10.8833 0.115973 11.0225 0.278335 11.0225H2.18029V11.1849Z"
+                                            fill="#FCFAFC" />
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18"
+                                        fill="none">
+                                        <path opacity="0.7"
+                                            d="M21.6842 2.52473C20.8831 2.87228 20.0359 3.10203 19.1689 3.20684C20.0836 2.66043 20.769 1.80083 21.098 0.787493C20.2385 1.29914 19.2976 1.65963 18.3163 1.85328C17.6604 1.14194 16.7869 0.668441 15.8328 0.507032C14.8788 0.345624 13.8981 0.505441 13.0447 0.961419C12.1912 1.4174 11.5133 2.14374 11.1172 3.02654C10.721 3.90934 10.6291 4.89866 10.8558 5.83933C9.11793 5.75144 7.41801 5.29893 5.86645 4.51121C4.31489 3.7235 2.94639 2.61819 1.84986 1.2671C1.46525 1.93873 1.26316 2.69933 1.26367 3.47328C1.26231 4.19203 1.43869 4.89997 1.77712 5.53406C2.11555 6.16814 2.60552 6.70871 3.20341 7.10762C2.50849 7.08872 1.82842 6.90225 1.22104 6.56407V6.61736C1.22625 7.62442 1.57914 8.59876 2.22002 9.37559C2.8609 10.1524 3.75043 10.684 4.73814 10.8805C4.35793 10.9962 3.96318 11.0572 3.56578 11.0617C3.29069 11.0585 3.01628 11.0335 2.74512 10.9871C3.02639 11.8534 3.5707 12.6105 4.30232 13.153C5.03393 13.6955 5.91646 13.9964 6.82709 14.0139C5.28937 15.2239 3.39086 15.8842 1.4342 15.8897C1.07794 15.8909 0.721969 15.8695 0.368408 15.8258C2.36615 17.1157 4.69425 17.8004 7.07222 17.7975C8.71321 17.8145 10.3411 17.5044 11.8609 16.8853C13.3807 16.2661 14.7619 15.3503 15.9238 14.1914C17.0857 13.0325 18.0051 11.6536 18.6281 10.1354C19.2512 8.61723 19.5655 6.9901 19.5526 5.34907C19.5526 5.16789 19.5526 4.97605 19.5526 4.7842C20.3889 4.16052 21.1102 3.39593 21.6842 2.52473Z"
+                                            fill="#FCFAFC" />
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16"
+                                        fill="none">
+                                        <path opacity="0.7"
+                                            d="M21.3158 5.09095C21.3158 2.52079 19.2408 0.445801 16.6706 0.445801H4.64514C2.07499 0.445801 0 2.52079 0 5.09095V10.75C0 13.3202 2.07499 15.3951 4.64514 15.3951H16.6706C19.2408 15.3951 21.3158 13.3202 21.3158 10.75V5.09095ZM13.7232 8.20343L8.9366 10.8443C8.72438 10.9622 8.53575 10.7972 8.53575 10.5614V5.16168C8.53575 4.92589 8.72438 4.76083 8.9366 4.87873L13.7704 7.63752C13.9826 7.779 13.9354 8.08553 13.7232 8.20343Z"
+                                            fill="#FCFAFC" />
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="13" viewBox="0 0 22 13"
+                                        fill="none">
+                                        <path opacity="0.7"
+                                            d="M6.01631 0.445801C2.69355 0.445801 0 3.22292 0 6.65042C0.317255 14.882 11.717 14.8783 12.0329 6.65042C12.0331 3.22386 9.33907 0.445801 6.01631 0.445801ZM15.6249 0.80975C13.9636 0.80975 12.6166 3.42545 12.6166 6.65042C12.7816 14.4013 18.4686 14.4013 18.6331 6.65042C18.6331 3.42545 17.2864 0.80975 15.6249 0.80975ZM20.275 1.41735C18.8853 1.51803 18.8883 11.7887 20.2748 11.8835C21.664 11.7837 21.6615 1.51165 20.275 1.41735Z"
+                                            fill="#FCFAFC" />
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18"
+                                        fill="none">
+                                        <path opacity="0.7"
+                                            d="M15.5338 5.87802C16.1875 5.24442 16.8365 3.76605 14.1126 5.56122C11.5681 7.25846 9.00632 8.93128 6.42766 10.5794C6.03499 10.7515 5.61048 10.8449 5.17964 10.854C4.74879 10.8631 4.3205 10.7876 3.92048 10.6322C2.28614 10.157 0.378219 9.52346 0.378219 9.52346C0.378219 9.52346 -0.924519 8.73032 1.30553 7.88553C1.30553 7.88553 10.7338 4.13564 14.0037 2.81451C15.2567 2.28652 19.5072 0.596947 19.5072 0.596947C19.5072 0.596947 21.4696 -0.14339 21.3061 1.65293C21.2516 2.39212 20.8158 4.98158 20.38 7.77993C19.7251 11.741 19.0169 16.0729 19.0169 16.0729C19.0169 16.0729 18.9079 17.2872 17.9818 17.4984C16.9904 17.4822 16.0325 17.148 15.2579 16.548C15.0399 16.3896 11.1708 14.0125 9.7532 12.851C9.60899 12.7563 9.49184 12.6278 9.41263 12.4774C9.33343 12.3271 9.29475 12.1598 9.30018 11.9911C9.30562 11.8223 9.355 11.6577 9.44373 11.5124C9.53246 11.3672 9.65766 11.246 9.80768 11.1602C11.752 9.43613 13.6611 7.67505 15.5338 5.87802Z"
+                                            fill="#FCFAFC" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!-- Animate on scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>
