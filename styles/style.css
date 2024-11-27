@@ -420,6 +420,101 @@ Packages CSS
     padding: 70px 0px;
 }
 
+.packagesSec .packagesSecBG {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.pricigCard-wrapper {
+    height: 94%;
+    margin-top: 50px;
+    padding: 40px 34px 90px 34px;
+    border-radius: 20px;
+    border: 1px solid rgba(72, 96, 115, 0.20);
+    background: white;
+    position: relative;
+}
+
+.price-content h3 {
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.price-content .price {
+    color: var(--c-accent);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.packageFeature {
+    margin-top: 20px;
+}
+
+.featureListing {
+    margin-bottom: 20px;
+}
+
+.featureListing p {
+    margin: unset;
+    text-align: left;
+}
+
+.featureListing .bullet {
+    width: 24px;
+    height: 24px;
+    background-color: #722E92;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.choose-plan-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 34px;
+}
+
+.choose-plan-btn button {
+    width: calc(100% - 68px);
+    color: var(--c-accent);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 1px solid var(--c-accent);
+}
+
+.pricigCard-wrapper:hover .price-content h3 {
+    font-weight: 500;
+}
+
+.pricigCard-wrapper:hover .choose-plan-btn button {
+    background-color: var(--c-accent);
+    color: white;
+}
+
+.pricigCard-wrapper:hover {
+    border: .7px solid var(--c-accent);
+    box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 0.10);
+}
+
+.choose-plan-btn button:hover {
+    background-color: var(--c-accent);
+    color: white;
+}
+
+
 /* ============================
 Footer CSS
 ============================ */
