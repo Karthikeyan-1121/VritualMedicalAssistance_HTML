@@ -444,6 +444,179 @@ Calculator CSS
     color: white;
 }
 
+.calc-wrapper {
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid #8F4AF1;
+    background: white;
+}
+
+.timeSaved,
+.costSaved {
+    padding: 25px 35px;
+}
+
+.timeSaved {
+    background-color: #F1F9F6;
+}
+
+.costSaved {
+    background-color: #F9F8F1;
+}
+
+.dynamicValueHrs,
+.dynamicValuePrice {
+    color: #01223A;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.cardTitle {
+    color: #01223A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 1px;
+}
+
+/* radio btn */
+.calcSec .button {
+    float: left;
+    margin: 5px 5px 0 0;
+    width: 145px;
+    height: 45px;
+    position: relative;
+    background: #EEE;
+    border-radius: 50px;
+}
+
+.calcSec .button label,
+.calcSec .button input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+}
+
+.calcSec .button input[type="radio"] {
+    opacity: 0.011;
+    z-index: 100;
+}
+
+.calcSec .button input[type="radio"]:checked+label {
+    background: var(--c-accent);
+    border-radius: 50px;
+    color: white;
+}
+
+.calcSec .button label {
+    cursor: pointer;
+    z-index: 90;
+    border: 1px solid rgb(239, 239, 239);
+}
+
+.calc-output {
+    height: 100%;
+    border-radius: 13px;
+    background: #F6EFF9;
+    padding: 20px;
+    box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.10) inset;
+}
+
+.calc-out-wrapper {
+    height: 100%;
+    padding: 8px;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.planRecomended {
+    background-color: #233E98;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 25px 0;
+}
+
+.planRecomended p {
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: unset;
+}
+
+.calc-revenue {
+    padding-top: 20px;
+    padding-bottom: 110px;
+    background-image: url(/assets/images/Calc-out-bg.png);
+    background-size: cover;
+    background-position: center bottom;
+    border-radius: 5px;
+}
+
+.calc-revenue p {
+    color: #01223A;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.calc-revenue .value-note {
+    color: #486073;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.calc-revenue .revenue-generated {
+    color: #233E98;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 4px;
+}
+
+.enroll-btn a {
+    width: 100%;
+    height: 100%;
+}
+
+.enroll-btn p {
+    color: #233E98;
+    text-align: center;
+    leading-trim: both;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+
+
 /* ============================
 Testimonial CSS
 ============================ */
@@ -773,7 +946,7 @@ textarea.form-control {
 .show>.btn-primary.dropdown-toggle {
     color: var(--c-accent);
     background-color: #ffffff;
-    border-color: var(--c-accent);
+    /*  border-color: var(--c-accent); */
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
