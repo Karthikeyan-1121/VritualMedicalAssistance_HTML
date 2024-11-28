@@ -48,6 +48,10 @@ button {
     background-color: transparent;
 }
 
+main {
+    overflow-x: hidden;
+}
+
 .headingTwo-n-span span {
     color: #722E92;
     font-size: 16px;
@@ -142,9 +146,71 @@ Video Showreel CSS
     z-index: 0;
 }
 
+.wrapper {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.wrapper .circle {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: #722e92;
+    margin: auto;
+    transform: scale(1, 1);
+}
+
+.wrapper .circle.pulse {
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+    background-color: #722e9253;
+}
+
+.wrapper svg {
+    fill: white;
+    stroke: #722E92;
+    stroke-linejoin: round;
+    stroke-width: 5;
+    transition: all 0.3s;
+}
+
+.wrapper svg:hover {
+    cursor: pointer;
+    fill: white;
+    stroke: white;
+    transform: scale(1.2, 1.2);
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    25% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.3, 1.3);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
 .video-text-content {
     position: absolute;
-    bottom: 20%;
+    bottom: 25%;
 }
 
 .video-decor-LT,
@@ -205,7 +271,8 @@ p.value {
 }
 
 .statics-card-one #part .circle {
-    background-color: #E64C65;
+    background: rgb(168, 85, 247);
+    background: linear-gradient(90deg, rgba(168, 85, 247, 1) 0%, rgba(59, 130, 246, 1) 100%);
     /*transform: rotate(76deg);*/
     animation: first 1s 1 forwards;
 }
@@ -225,7 +292,8 @@ p.value {
 }
 
 .statics-card-two #part .circle {
-    background-color: #E64C65;
+    background: rgb(168, 85, 247);
+    background: linear-gradient(90deg, rgba(168, 85, 247, 1) 0%, rgba(59, 130, 246, 1) 100%);
     /*transform: rotate(76deg);*/
     animation: second 1s 1 forwards;
 }
@@ -245,7 +313,8 @@ p.value {
 }
 
 .statics-card-three #part .circle {
-    background-color: #E64C65;
+    background: rgb(168, 85, 247);
+    background: linear-gradient(90deg, rgba(168, 85, 247, 1) 0%, rgba(59, 130, 246, 1) 100%);
     /*transform: rotate(76deg);*/
     animation: thrid 1s 1 forwards;
 }
@@ -265,7 +334,8 @@ p.value {
 }
 
 .statics-card-four #part .circle {
-    background-color: #E64C65;
+    background: rgb(168, 85, 247);
+    background: linear-gradient(90deg, rgba(168, 85, 247, 1) 0%, rgba(59, 130, 246, 1) 100%);
     /*transform: rotate(76deg);*/
     animation: four 1s 1 forwards;
 }
@@ -285,9 +355,20 @@ p.value {
 }
 
 .statics-card-five #part .circle {
-    background-color: #E64C65;
+    background: rgb(168, 85, 247);
+    background: linear-gradient(90deg, rgba(168, 85, 247, 1) 0%, rgba(59, 130, 246, 1) 100%);
     /*transform: rotate(76deg);*/
     animation: five 1s 1 forwards;
+}
+
+#part2 {
+    transform: rotate(180deg);
+}
+
+#part2 .circle {
+    background: #746AF6;
+    /*  background: linear-gradient(90deg, rgba(168, 85, 247, 1) 0%, rgba(59, 130, 246, 1) 100%); */
+    animation: fivePlus 1s 1 forwards 1s;
 }
 
 @keyframes five {
@@ -297,6 +378,16 @@ p.value {
 
     to {
         transform: rotate(180deg);
+    }
+}
+
+@keyframes fivePlus {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(70deg);
     }
 }
 
@@ -344,6 +435,13 @@ Calculator CSS
     border: 1px solid lightgray;
     border-left: none;
     border-right: none;
+    background-image: url(/assets/images/Calc_BG.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.calcSec h2 {
+    color: white;
 }
 
 /* ============================
@@ -513,6 +611,190 @@ Packages CSS
     background-color: var(--c-accent);
     color: white;
 }
+
+
+/* ============================
+Partners CSS
+============================ */
+.partnersTrustSec {
+    padding: 100px 0;
+}
+
+.trusted-partner-logo {
+    height: 120px;
+}
+
+.trusted-partner-logo img {
+    height: 100%;
+}
+
+
+/* ============================
+CTA CSS
+============================ */
+.ctaSec {
+    padding: 70px 0;
+    background-color: #002D56;
+    background-image: url(/assets/images/cta-bg.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.ctaSec p {
+    margin-top: 18px;
+}
+
+.cta-btn {
+    border: 1px solid #002D56;
+    background-color: white;
+    color: #002D56;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.cta-btn-two {
+    color: white;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+/* ============================
+Contact CSS
+============================ */
+.contactSec {
+    padding: 90px 0;
+}
+
+.contact-mode {
+    align-items: center;
+}
+
+.contact-mode p {
+    margin: unset;
+}
+
+.contact-mode a {
+    text-decoration: none;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 0.18);
+}
+
+.verticalLine {
+    border-left: 1px solid #48607328;
+    height: 100%;
+}
+
+/* ============================
+Form CSS
+============================ */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group>label {
+    display: block;
+    font-size: 16px;
+    color: #01223A;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.form-control {
+    height: 60px;
+    background: #F8F8F8;
+    border-color: transparent;
+    padding: 0 15px;
+    font-size: 16px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: var(--c-accent);
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+}
+
+textarea.form-control {
+    height: 160px;
+    padding-top: 15px;
+    resize: none;
+}
+
+.btn {
+    padding: .657rem .75rem;
+    font-size: 16px;
+    letter-spacing: 0.050em;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+    color: var(--c-accent);
+    background-color: white;
+    border-color: var(--c-accent);
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: var(--c-accent);
+    border-color: var(--c-accent);
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    color: var(--c-accent);
+    background-color: #ffffff;
+    border-color: var(--c-accent);
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    color: var(--c-accent);
+    background-color: #ffffff;
+    border-color: var(--c-accent);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+}
+
+#submit {
+    width: 100%;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+
+
+
+
 
 
 /* ============================
