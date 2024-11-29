@@ -95,6 +95,19 @@
     .decorFav {
         width: 12%;
     }
+
+    .infography img {
+        width: 70%;
+    }
+
+    .socialConnect {
+        padding-left: 0px;
+        border-left: 1px solid transparent;
+    }
+
+    .socialIcons {
+        flex-wrap: wrap;
+    }
 }
 
 /* Small Mobile (XS) : >480px to 576px */
@@ -171,6 +184,11 @@
     .decorFav {
         width: 12%;
     }
+
+    .socialConnect {
+        padding-left: 0px;
+        border-left: 1px solid transparent;
+    }
 }
 
 /* Standard Mobile (SM) : 576px to 768px */
@@ -246,6 +264,11 @@
 
     .decorFav {
         width: 12%;
+    }
+
+    .socialConnect {
+        padding-left: 0px;
+        border-left: 1px solid transparent;
     }
 }
 
