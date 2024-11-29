@@ -101,6 +101,19 @@ header {
     color: #818181;
 }
 
+.actionBtns button.call-btn:hover {
+    color: var(--c-accent);
+    border-color: var(--c-accent);
+}
+
+.actionBtns button.call-btn:hover svg path {
+    fill: var(--c-accent);
+}
+
+.actionBtns button.freeDemo-btn:hover {
+    background-color: #061a5d;
+}
+
 .freeDemo-btn {
     font-weight: 500;
     color: white;
