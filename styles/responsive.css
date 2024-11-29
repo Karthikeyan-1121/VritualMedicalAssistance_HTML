@@ -1,0 +1,332 @@
+/* MD and SM */
+@media screen and (max-width:992px) {
+    .head-top {
+        display: none;
+    }
+
+    header {
+        top: 0;
+    }
+
+    /*    header nav .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .actionBtns {
+        margin-top: 10px;
+    } */
+}
+
+/* Small Mobile (XS) : <480px. */
+@media screen and (min-width: 0px) and (max-width:480px) {
+    header nav .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .actionBtns {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .heroBannerOne {
+        height: 65vh;
+    }
+
+    .heroBannerOne .heroImg {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .heroBannerOne .heroImg img {
+        width: unset;
+        height: 65vh;
+    }
+
+    .hero-banner-content {
+        margin-left: 0;
+    }
+
+    .banner-content {
+        left: 0px;
+    }
+
+    .hero-banner-content span {
+        font-size: 16px;
+    }
+
+    .hero-banner-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-banner-content p {
+        font-size: 16px;
+    }
+
+    .static-wraper {
+        flex-wrap: wrap;
+    }
+
+    .video-text-content {
+        bottom: 11%;
+    }
+
+    .calc-output {
+        margin-top: 20px;
+    }
+
+    .benifitsCards {
+        margin-top: 20px;
+    }
+
+    .benifits-card-wrapper {
+        padding: 20px 0;
+    }
+
+    .benifits-card-wrapper:hover {
+        padding: 20px;
+    }
+
+    .decorFav {
+        width: 12%;
+    }
+}
+
+/* Small Mobile (XS) : >480px to 576px */
+@media screen and (min-width: 480px) and (max-width: 576px) {
+    header nav .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .actionBtns {
+        margin-top: 10px;
+    }
+
+    .heroBannerOne {
+        height: 50vh;
+    }
+
+    .heroBannerOne .heroImg {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .heroBannerOne .heroImg img {
+        width: unset;
+        height: 50vh;
+    }
+
+    .hero-banner-content {
+        margin-left: 0;
+    }
+
+    .banner-content {
+        left: 0px;
+    }
+
+    .hero-banner-content span {
+        font-size: 16px;
+    }
+
+    .hero-banner-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-banner-content p {
+        font-size: 16px;
+    }
+
+    .static-wraper {
+        flex-wrap: wrap;
+    }
+
+    .video-text-content {
+        bottom: 14%;
+    }
+
+    .calc-output {
+        margin-top: 20px;
+    }
+
+    .benifitsCards {
+        margin-top: 20px;
+    }
+
+    .benifits-card-wrapper {
+        padding: 20px 0;
+    }
+
+    .benifits-card-wrapper:hover {
+        padding: 20px;
+    }
+
+    .decorFav {
+        width: 12%;
+    }
+}
+
+/* Standard Mobile (SM) : 576px to 768px */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    header nav .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .actionBtns {
+        margin-top: 10px;
+    }
+
+    .heroBannerOne {
+        height: 50vh;
+    }
+
+    .heroBannerOne .heroImg {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .heroBannerOne .heroImg img {
+        width: unset;
+        height: 50vh;
+    }
+
+    .hero-banner-content {
+        margin-left: 0;
+    }
+
+    .banner-content {
+        left: 0px;
+    }
+
+    .hero-banner-content span {
+        font-size: 16px;
+    }
+
+    .hero-banner-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-banner-content p {
+        font-size: 16px;
+    }
+
+    .static-wraper {
+        flex-wrap: wrap;
+    }
+
+    .video-text-content {
+        bottom: 14%;
+    }
+
+    .calc-output {
+        margin-top: 20px;
+    }
+
+    .benifitsCards {
+        margin-top: 20px;
+    }
+
+    .benifits-card-wrapper {
+        padding: 20px 0;
+    }
+
+    .benifits-card-wrapper:hover {
+        padding: 20px;
+    }
+
+    .decorFav {
+        width: 12%;
+    }
+}
+
+/* Large Mobile (MD) : 768px to 992px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .hero-banner-content {
+        margin-left: 0;
+    }
+
+    .banner-content {
+        left: 60px;
+    }
+
+    .static-wraper {
+        flex-wrap: wrap;
+    }
+
+    .calc-output {
+        margin-top: 20px;
+    }
+
+    .benifitsCards {
+        margin-top: 20px;
+    }
+
+    .benifits-card-wrapper {
+        padding: 20px 0;
+    }
+
+    .benifits-card-wrapper:hover {
+        padding: 20px;
+    }
+
+    .decorFav {
+        width: 12%;
+    }
+}
+
+/* Tab & mini pc screen (LG) : 992px to 1200px */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .banner-content {
+        left: 5%;
+    }
+
+    .hero-banner-content span {
+        font-size: 16px;
+    }
+
+    .hero-banner-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-banner-content p {
+        font-size: 16px;
+    }
+
+    .static-wraper {
+        flex-wrap: wrap;
+    }
+
+    .decorFav {
+        width: 12%;
+    }
+}
+
+/* Tab & mini pc screen (XL) : 1200px to 1400px */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .banner-content {
+        left: 5%;
+    }
+
+    .hero-banner-content span {
+        font-size: 18px;
+    }
+
+    .hero-banner-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-banner-content p {
+        font-size: 16px;
+    }
+}

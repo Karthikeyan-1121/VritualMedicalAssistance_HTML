@@ -122,14 +122,18 @@ Hero Section CSS
     z-index: 0;
 }
 
+.heroBannerOne .heroImg img {
+    width: 100%;
+}
+
 .carousel-item img {
     position: relative;
     z-index: 1;
 }
 
 .banner-content {
-    top: 26%;
-    bottom: 23%;
+    /*   top: 26%;
+    bottom: 23%; */
     left: 13%;
 }
 
@@ -286,6 +290,8 @@ Statics CSS
 .static-wraper {
     display: flex;
     gap: 40px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .staticsSec h2 {

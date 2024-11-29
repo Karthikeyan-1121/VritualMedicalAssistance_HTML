@@ -25,6 +25,7 @@
     <!-- Style links -->
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/graph.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
 
 </head>
 
@@ -90,9 +91,9 @@
             <div class="cnotainer-fluid">
                 <div class="row">
                     <div class="col-12">
-                        <div class="heroBannerOne position-relative">
+                        <div class="heroBannerOne position-relative d-flex align-items-center">
                             <div class="heroImg">
-                                <img src="assets/images/bacnner-01.png" class="d-block w-100" alt="VMA Banner 01">
+                                <img src="assets/images/bacnner-01.png" alt="VMA Banner 01">
                             </div>
 
                             <div class="container banner-content position-absolute">
@@ -312,28 +313,28 @@
                     </div>
                 </div>
                 <div class="row benifitsCards">
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-6">
                         <div class="benifits-card-wrapper benifits-card-one">
                             <img src="assets/svg/Benefits-icon-01.svg" alt="Benefits-icon-01">
                             <h3>Improve Efficiency</h3>
                             <p>Reduce administrative burden and focus more on patient care.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-6">
                         <div class="benifits-card-wrapper benifits-card-two">
                             <img src="assets/svg/Benefits-icon-02.svg" alt="Benefits-icon-02">
                             <h3>Improve Efficiency</h3>
                             <p>Reduce administrative burden and focus more on patient care.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-6">
                         <div class="benifits-card-wrapper benifits-card-three">
                             <img src="assets/svg/Benefits-icon-03.svg" alt="Benefits-icon-03">
                             <h3>Improve Efficiency</h3>
                             <p>Reduce administrative burden and focus more on patient care.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-6">
                         <div class="benifits-card-wrapper benifits-card-four">
                             <img src="assets/svg/Benefits-icon-04.svg" alt="Benefits-icon-04">
                             <h3>Improve Efficiency</h3>
@@ -845,7 +846,7 @@
         <!-- Contact starts -->
         <section class="contactSec">
             <div class="container">
-                <div class="row">
+                <div class="row gy-3">
                     <div class="col-lg-3">
                         <div class="d-flex flex-column justify-content-evenly contact-content">
                             <h2>Reach us on</h2>
@@ -978,7 +979,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center flex-wrap">
                         <div class="brandInfo">
                             <img src="assets/images/logo-whte.png" alt="Logo-White" class="mb-3">
                             <p class="text-white mb-0">Hire a Dedicated Virtual Medical Assistant</p>
@@ -1049,37 +1050,6 @@
         integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- Carosel js -->
-    <script>
-        // Hide all item in .carousel-item initially
-        $(".carousel-item *").addClass("d-none");
-
-        // Animate the first slide
-        setTimeout(function () {
-            $(".carousel-item.active *")
-                .removeClass("d-none")
-                .addClass("animated");
-        }, 700);
-
-        // Animate after the slider changes
-        $("#mainBanner").on("slid.bs.carousel", function (e) {
-            // Add .d-none to previous shown slide
-            $(".carousel-item *").addClass("d-none");
-
-            // Element for new slide
-            var c = e["relatedTarget"];
-
-            // After 0.7 sec slide changes, then make the animation for new slide
-            setTimeout(function () {
-                $(c)
-                    .find("*")
-                    .removeClass("d-none")
-                    .addClass("animated");
-                console.log("c");
-            }, 700);
-        });
-
-    </script>
 
 </body>
 
